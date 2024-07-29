@@ -1,0 +1,226 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color-scheme: dark; */
+}
+
+body{
+    padding: 0 4vmax;
+    /* background-color: #032310; */
+    /* background-color: #2c0047; */
+    /* background-image: repeating-linear-gradient(135deg,#2c0047 20%, #8603b9); */
+    background-image: repeating-linear-gradient(135deg, #8603b9 22%,#2c0047 ) ;
+    /* background-image: repeating-linear-gradient(135deg, #8603b9 22%,#2c0047 ) ,repeating-linear-gradient(135deg,#2c0047 40%, #8603b9 20% ,#2c0047 40%); */
+    /* background-image: repeating-linear-gradient(135deg,#2c0047 20%,#2c0047, #8603b9); */
+    /* background-image: repeating-linear-gradient(135deg,#2c0047 20%, #8603b9 ,#2c0047); */
+
+    color: #fffff0;
+}
+
+/* --------------------------------------navbar------------------------------------------------- */
+
+hr{
+    opacity: 0.4;
+    border-radius: 50%;
+}
+/* 
+.navbar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-between;
+    place-items: center;
+    margin: 1vmax auto ;
+    text-transform: capitalize;
+    font-size: 1.75vmax;
+    font-family: cursive;
+    line-height: 5vmax;
+}
+
+.logo{
+    height: 2vmax;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+.logo img{
+    height: 2.5vmax;
+    flex-shrink: 1 ;
+}
+
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    gap: 5vmax;
+    list-style: none;
+    place-content: center;
+    scroll-behavior: smooth;
+    flex-shrink: 1 ;
+
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: #f1ecec;
+    scroll-behavior: smooth;
+
+}
+
+.profile{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 2vmax;
+}
+.profile img{
+    height: 3vmax;
+    width: 3vmax;
+    place-content: center;
+    place-items: center;
+    border-radius: 50%;
+} */
+
+/* -------------x-------------x-------------navbar---------------x----------------x------------------ */
+
+
+
+
+/* ---------------------------------------herosection------------------------------------------------- */
+
+.herosection{
+    box-sizing: content-box;
+    margin: 4vmax auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    place-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 3rem;
+    word-spacing: 1vmax;
+    text-transform: capitalize;
+}
+
+.herosection_content{
+    font-size: 5vmax;
+}
+
+.herosection_img img{
+    /* height: 100%; */
+    width: 100%;
+    border-radius: 2vmax;
+    background-color: antiquewhite;
+}
+
+@media only screen and (max-width: 600px) {
+    .htitle{
+        background-image: url(images/landing_img01.jpg);
+    }
+    .herosection_img img{
+        display: none;
+    }
+}
+
+/* -------------x--------------x------------herosection-----------x------------------x-------------------- */
+
+
+
+
+/* ---------------------------------------banner------------------------------------------------- */
+
+.section{
+    margin: 3.5vmax auto;
+    height: auto;
+}
+
+.banner img{
+    margin:  auto;
+    /* height: 100%; */
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.301);
+    border-radius: 2vmax;
+}
+
+
+/* -----------x-----------x------------banner-------------x-----------------x------------------- */
+
+
+.section_title{
+    text-transform: capitalize;
+    font-size: 3vmax;
+}
+
+
+.cardeck{
+    display: flex;
+    flex-direction: row;
+    overflow-x:scroll;
+    gap: 1.75vmax;
+    margin: 1vmax auto;
+    padding: 1.5vmax;
+}
+
+.cardeck a {
+    text-decoration: none;
+    list-style: none;
+    color: beige;
+}
+
+.item_card{
+    display:flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 1vmax;
+    height: 21vmax;
+    width: 14vmax;
+    padding: 1.5vmax;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    border: 0.15vmax solid rgba(255, 255, 255, 0.844);
+    border-radius: 1.5vmax;
+}
+
+.item_card:hover{
+    box-shadow: 0 0 1vmin 0.5vmin #383838;
+    background-color: #2c0047;
+    transition:  ease 400ms;
+
+}
+
+.anime_img img{
+    height: 17vmax;
+    width: 100%;
+    border-radius: 1.25vmax;
+    box-shadow: 0 0 5px 1.5px #121111;
+    background-size: cover;
+}
+
+.anime_name{
+    font-size: 1.25vmax;
+}
+
+#aboutus{
+    margin: 6vmax auto;
+    word-spacing: 0.15vmax;
+    letter-spacing: 0.05vmax;
+    line-height: 2.15vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.aboutus{
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 3vmax;
+    margin: 4vmax auto;
+}
+
+.abtus{
+    font-size: 1.5vmax ;
+    margin: 2vmax auto;
+    text-align: justify;
+}

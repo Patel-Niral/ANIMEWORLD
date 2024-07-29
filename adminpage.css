@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 2vmax;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: auto 3vmax;
+    /* overflow: hidden; */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2vmax;
+    background: #333;
+    color: #fff;
+    /* padding-top: 30px; */
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    place-content: center;
+    gap: 3.2rem;
+}
+
+header li a {
+    font-size: 1vmax;
+}
+
+header h1 {
+    float: left;
+}
+#dashboard{
+    margin: 20px 0;
+    padding: 1vmax 2vmax ;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+#add-anime{
+    margin: 20px 0;
+    padding: 1vmax 2vmax ;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0779e4;
+}
+
+#animeList {
+    list-style: none;
+    padding: 0;
+}
+
+#animeList li {
+    padding: 10px;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    border: 1px solid #080808;
+}
+
+#manage-anime{
+    margin: 20px 0;
+    padding: 1vmax 2vmax ;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+.cardeck {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* overflow-x: scroll; */
+    gap: 1.75vmax;
+    margin: 1vmax auto;
+    padding: 1.5vmax;
+}
+
+.cardeck a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.item_card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 1vmax;
+    height: 21vmax;
+    width: 14vmax;
+    padding: 1.5vmax;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    border: 0.15vmax solid rgba(18, 18, 18, 0.844);
+    border-radius: 1.5vmax;
+}
+
+.item_card:hover {
+    box-shadow: 0 0 0.80vmin 0.25vmin #908e8e;
+    transition: ease 400ms;
+}
+
+.anime_img img {
+    height: 17vmax;
+    width: 100%;
+    border-radius: 1.25vmax;
+    box-shadow: 0 0 5px 1.5px #121111;
+    background-size: cover;
+}
+
+.anime_name {
+    font-size: 1.25vmax;
+}

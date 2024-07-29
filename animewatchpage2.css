@@ -1,0 +1,139 @@
+/* Anime Watch Page CSS Code */
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main Styles */
+  main {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Video Styles */
+  .video {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  /* Video Element Styles */
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Description Styles */
+  .description {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  
+  /* Episodes Styles */
+  .episodes {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    display: none;
+  }
+  
+  /* Episode List Styles */
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: episode-counter;
+  }
+  
+  /* Episode Item Styles */
+  .episode {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Episode Number Styles */
+  .epno {
+    display: inline-block;
+    width: 50px;
+    font-weight: bold;
+    counter-increment: episode-counter;
+    content: counter(episode-counter);
+  }
+  
+  /* Episode Name Styles */
+  .epname {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  /* Toggle Button Styles */
+  .toggle {
+    display: none;
+  }
+  
+  .toggle:checked ~ .episodes {
+    display: block;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    main {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .video {
+      width: 60%;
+    }
+  
+    .description {
+      width: 35%;
+    }
+  
+    .episodes {
+      width: 35%;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .video,
+    .description,
+    .episodes {
+      width: 100%;
+    }
+  }

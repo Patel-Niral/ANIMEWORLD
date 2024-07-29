@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 10vmax;  
+    background-image: repeating-linear-gradient(135deg, #64028b ,#2c0047 );
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.ws{
+    box-sizing: content-box;
+    display: grid;
+    height: 40vmax;
+    grid-template-columns: 65vmax 25vmax;
+    gap: 1.5rem;
+    /* overflow-wrap: ; */
+    place-content: center;
+    grid-template-areas: "a c"
+                         "b c";
+
+}
+
+.animevideo video{
+    height: 100%;
+    width: 100%;
+}   
+
+.animevideo{
+    /* height: 70vh;
+    width: 65vw; */
+    grid-area: a;
+}
+
+.animetitle{
+    font-size: 3.2vmax;
+}   
+.description{
+    padding: 1.5vmax 0;
+    /* height: 100% ; */
+    text-wrap: wrap;
+    /* background-color: blue; */
+    grid-area: b;
+    text-align: justify ;
+    color: aliceblue;
+}
+
+.description .details{
+    margin: 1.5vmax 0;
+    font-size: 1.2vmax;
+}
+
+.episode-section{
+    /* height:100%; */
+    /* background-color: blueviolet; */
+    grid-area: c;
+    color: aliceblue;
+    overflow-y: scroll;
+    scrollbar-color: none;
+    scroll-behavior: smooth;
+}
+
+.episode-section a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.episode-section .episode{
+    display: grid;
+    grid-template-columns: 25% 70%;
+    padding: 1vmax;
+    height: 5vmax;
+    gap: 1vmax;
+
+
+}
+
+.epimage{
+    height: 3.2vmax;
+    width: 100%;
+}
+
+.epimage img{
+    height: 3.2vmax;
+    width: 100%;
+    object-fit:fill;
+    background-color: aliceblue;
+}

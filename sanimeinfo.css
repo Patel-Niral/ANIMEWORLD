@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    color-scheme: dark;
+}
+
+body {
+    padding: 2vmax  4vmax;
+    /* background-color: #1c002d; */
+    /* background-color: #2f6774; */
+    background-color: #08272e;
+    /* background-color: #08272e; */
+
+}
+
+.title {
+    font-size: 2vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    text-transform: capitalize;
+    margin: 1vmax auto;
+}
+
+/*** ----------------------------------------------------------/herosection--------------------------------------------------------- ***/
+
+.herosection {
+    box-sizing: content-box;
+    margin: 2.5vmax auto;
+    display: flex;
+    flex-direction: column-reverse;
+    column-gap: 3vmax;
+    place-content: center;
+    place-items: center;
+    height: 100%;
+    padding: 3vmax auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    cursor: default;
+    /* color: #1b4852; */
+}
+
+.animeinfo {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* place-content: center; */
+    flex-direction: column;
+    text-transform: capitalize;
+    gap: 1.5vmax;
+}
+
+.animeinfo div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.animeimg img {
+
+    width: 100%;
+    border-radius: calc(3vmax - 20px);
+}
+
+.animetitle {
+    font-size: 5vmax;
+}
+
+.rating,
+.genre,
+.languages,
+.subtitle {
+    font-size: 1.5vmax;
+}
+
+
+/* .gap {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6vmax;
+} */
+
+.watchlist button {
+    height: 3.5vmax;
+    width: 9vmax;
+    text-transform: capitalize;
+    font-weight: 550;
+    font-size: 1.25vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: 0.25vmax ridge aliceblue;
+    border-radius: 0.75vmax;
+}
+
+
+
+/* .review data:hover::after {
+        content: ' ( ' attr(value) 'k)';
+        font-size: 1vmax;
+      }
+       */
+
+/* -----------------------x-----------------x------------------/herosection-----------------x---------------------x------------------- */
+
+
+/* ----------------------------------------------------------/description--------------------------------------------------------- */
+
+.description {
+    margin: 4vmax auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.description .title {
+    font-size: 2.75vmax;
+}
+
+.description_details {
+    overflow: hidden;
+    display: -webkit-box ;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; 
+    font-size: 1.5vmax;
+    line-clamp: 4;
+}
+.more {
+    color: blue;
+    cursor: pointer;
+    font-size: small;
+}
+/* -----------------------x-----------------x------------------/description-----------------x---------------------x------------------- */
+
+
+/* ----------------------------------------------------------/ season section--------------------------------------------------------- */
+.episodesection {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+
+.seasons {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 3vmax;
+}
+
+.seasons button {
+    background: none;
+}
+
+.ss {
+    margin: 1vmax auto;
+    /* padding: 7px 16px; */
+    place-content: center;
+    height: 3.5vmax;
+    width: 8.5vmax;
+    font-size: 1.5vmax;
+    border: 2px solid;
+    border-radius: 1vmax;
+    text-transform: capitalize;
+}
+
+.ss a {
+    text-decoration: none;
+    color: #afbbbd;
+}
+
+.ss:hover {
+    box-shadow: 0 0 0.50vmin 0.25vmin #fce1e1;
+    background: none;
+    transition: ease 300ms;
+}
+
+/* -----------------------x-----------------x------------------/season section-----------------x---------------------x------------------- */
+
+
+/* ----------------------------------------------------------/episodes--------------------------------------------------------- */
+
+.cardeck {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vmax;
+    margin: 1.6vmax 0 ;
+    /* padding: 1.25vmax; */
+    text-transform: capitalize;
+}
+
+.cardeck a {
+    text-decoration: none;
+    color: #afbbbd;
+}
+
+#seasons {
+    box-sizing: border-box;
+    /* display: -webkit-box; */
+    display: flex;
+    flex-direction: column;
+    /* -webkit-box-pack: start;
+    -webkit-box-align: start; */
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: unset;
+    /* transition: translate(25vmax) ; */
+}
+
+
+
+/* #seasons:hover{
+    scroll-timeline: 200ms;
+} */
+
+.ep {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    padding: 1vmax;
+    height: 5vmax;
+    gap: 1vmax;
+    padding: 1.2vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 2px ridge rgba(255, 255, 255, 0.218); */
+    border: 0.25vmax solid aliceblue;
+    border-radius: 1.5vmax;
+    background-color: #26555d;
+    overflow-y: hidden;
+}
+
+.ep:hover {
+    /* box-shadow: 0 0 0.25vmin 0.1vmin #ffffff; */
+    transition: ease 400ms;
+}
+
+
+
+.episodesimg {
+    height: 100%;
+    border: 0;
+    background: none;
+    /* border-radius: 1.25vmax; */
+}
+
+.episodesimg img {
+    height: 4.8vmax;
+    width: 100%;
+    object-fit:fill;
+    background-color: aliceblue;
+    /* box-shadow: 0 0 0.20vmax 0.20vmax #438797; */
+}
+
+.episodes_name {
+    font-size: 1.6vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* -----------------------x-----------------x------------------/episodes-----------------x---------------------x------------------- */
+
+
+
+/* ----------------------------------------------------------character info--------------------------------------------------------- */
+
+.charcards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 1.5vmax;
+    margin: 1vmax auto;
+    padding: 1.5vmax;
+   
+}
+
+
+.charinfo {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 1vmax;
+    height: unset;
+    width: 10vmax;
+    padding: 1.5vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    border-radius: 1.5vmax;
+    background-color: #151515;
+    border: 0.25vmax solid aliceblue;
+    border-radius: 1.5vmax;
+    background-color: #26555d;
+}
+
+.char-img img {
+    height: 10vmax;
+    width: 100%;
+    border-radius: 1.25vmax;
+
+}
+
+.char-name {
+    font-size: 1.25vmax;
+}
+
+.charinfo:hover {
+    box-shadow: 0 0 7px 1px #ffffff;
+    transition: ease 700ms;
+}
+
+/* -----------------------x-----------------x------------------/-----------------x---------------------x------------------- */
