@@ -65,12 +65,13 @@
 </style> -->
 
 <body>
+    <div class="cardeck">
     <?php
     include 'admindatabase.php';
     // Execute the query to select all anime with the genre 'action'
     $query = "SELECT * FROM anime WHERE genre LIKE '%action%'";
     $result = mysqli_query($conn, $query);
-    ?> <div class="cardeck">
+    ?> 
         <?php
 
                         // Check if the query execution was successful
@@ -96,14 +97,14 @@
                         <div class="anime_name"><?php echo htmlspecialchars($anime_name); ?></div>
                     </div>
                 </a>
-    </div>
+   
 <?php
                             }
                         } else {
                             echo "No anime found in the 'action' genre.";
                         }
 ?>
-
+ </div>
 </body>
 
 </html>
